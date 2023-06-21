@@ -1,0 +1,225 @@
+/* !General */
+:root {
+  --grayMainColor: #f7f7f6;
+  --orangeColor: #f59e0b;
+  --greenColor: #22c55e;
+  --blueColor: #0d6efd;
+  --redColor:#f44336;
+  --mainBackgroundColor: #f0f5f8;
+}
+@font-face {
+  font-family: Open_Sans;
+  src: url(./../fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+* {
+  font-family: Open_Sans;
+}
+li {
+  list-style: none;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.btn:first-child:active {
+  border-color: transparent;
+}
+
+/* !Offcanvas */
+.sidebar {
+  width: 15%;
+}
+.offCanvas .sideBarTitle {
+  width: fit-content;
+}
+.offCanvas .sideBarTitle h5::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 2px;
+  top: 155%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
+.offCanvas .sideBarTitle h5::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 155%;
+  left: 50%;
+  border: 5px solid white;
+  border-radius: 100vh;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
+
+.offCanvas .pages ul .btn:hover {
+  background-color: var(--grayMainColor);
+}
+
+/* !Main NavBar */
+.navbar .input-group-text {
+  background-color: white;
+}
+.navbar .form-control:focus {
+  border-color: var(--bs-border-color);
+  outline: none;
+  box-shadow: unset;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+}
+/* !Page Content */
+.pageContent {
+  background-color: var(--mainBackgroundColor);
+}
+.pageContent .pageTitle {
+  width: fit-content;
+}
+.pageContent .pageTitle h3::after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 80%;
+  height: 3px;
+  background-color: white;
+}
+.pageContent .pageTitle h3::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+  left: 0;
+  width: 30%;
+  height: 3px;
+  background-color: black;
+}
+/* ?Info */
+.infoCard .cardBanner .avatar {
+  left: 5%;
+  top: 75%;
+  width: 70px;
+  height: 70px;
+}
+/* ?Draft */
+.draftCard form * {
+  outline: none;
+  resize: none;
+}
+.draftCard form textarea {
+  min-height: 12.5rem;
+}
+/* ?Target */
+.targetCard .cardContent .icon {
+  width: 100px;
+  height: 80px;
+}
+.targetCard .cardContent .money .icon {
+  background-color: #cce2fe;
+}
+.targetCard .cardContent .projects .icon {
+  background-color: #fdedcf;
+}
+
+.targetCard .cardContent .team .icon{
+  background-color: #d2f2df;
+}
+.targetCard .cardContent .money .icon i {
+  color: var(--blueColor);
+}
+.targetCard .cardContent .projects .icon i {
+  color: var(--orangeColor);
+}
+.targetCard .cardContent .team .icon i {
+  color: var(--greenColor);
+}
+.targetCard .cardContent .progress {
+  height: 5px;
+}
+
+.targetCard .cardContent .money .progress-bar {
+  width: 80%;
+  background-color:var(--blueColor) ;
+}
+.targetCard .cardContent .projects .progress-bar {
+  width: 55%;
+  background-color: var(--orangeColor);
+}
+.targetCard .cardContent .team .progress-bar {
+  width: 75%;
+  background-color: var(--greenColor);
+}
+
+.targetCard .bar p {
+  bottom: 15px;
+  translate: -50%;
+  font-size: 13px;
+}
+.targetCard .money .bar p {
+  left: 80%;
+  background-color: var(--blueColor);
+}
+.targetCard .projects .bar p {
+  left: 55%;
+  background-color: var(--orangeColor);
+}
+.targetCard .team .bar p{
+  left: 75%;
+  background-color: var(--greenColor);
+}
+.targetCard .bar p::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50%;
+  border: 7px solid transparent;
+}
+.targetCard .money .bar p::after {
+  border-top-color: var(--blueColor);
+}
+.targetCard .projects .bar p::after {
+  border-top-color: var(--orangeColor);
+}
+.targetCard .team .bar p::after {
+  border-top-color: var(--greenColor);
+}
+/* ?Statistics */
+.statisticsCard .total i{
+  color: var(--orangeColor);
+}
+.statisticsCard .pending i{
+  color: var(--blueColor);
+}
+.statisticsCard .closed i{
+  color: var(--greenColor);
+}
+.statisticsCard .deleted i{
+  color: var(--redColor);
+}
+/* ?News */
+.newsCard .cardItem figure{
+  width: 20%;
+  height: 20%;
+}
+.newsCard .cardItem p{
+font-size: 14px;
+
+}
+.newsCard .cardItem span{
+  font-size: 12px;
+  background-color: var(--grayMainColor);
+}
+/* ?Tasks */
+.tasksCard .cardItem i:not(.disabled i){
+cursor: pointer;
+transition: color 0.5s;
+}
+.tasksCard .cardItem i:hover:not(.disabled i){
+color: var(--redColor);  
+}

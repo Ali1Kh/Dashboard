@@ -1,0 +1,10 @@
+@media screen and (width < 600px) {
+  .offCanvas .sideBarTitle h5::before,
+  .offCanvas .sideBarTitle h5::after {
+    width: 0%;
+  }
+  .sidebar .pages ul li a {
+    display: none;
+  }
+  
+}

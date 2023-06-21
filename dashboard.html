@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <main class="d-flex">
+        <!-- !Sidebar -->
+        <aside class="sidebar">
+            <div class="offCanvas h-100 shadow py-md-5 px-md-3 position-relative">
+                <div class="sideBarTitle text-center m-auto mb-5">
+                    <h5 class="position-relative">Alyy</h5>
+                </div>
+                <div class="pages">
+                    <ul class="d-flex flex-column p-0 align-items-start">
+                        <li class="w-100 btn text-start mb-2">
+                            <i class="fa-regular fa-chart-bar"></i>
+                            <a href="dashboard.html"> Dashboard</a>
+                        </li>
+                        <li class="w-100 btn text-start mb-2">
+                            <i class="fa-solid fa-gear"></i>
+                            <a class="mb-2 w-100" href="settings.html"> Settings</a>
+                        </li>
+                        <li class="w-100 btn text-start mb-2">
+                            <i class="fa-regular fa-user"></i>
+                            <a class="mb-2 w-100" href="profile.html"> Profile</a>
+                        </li>
+                        <li class="w-100 btn text-start mb-2">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <a href="projects.html"> Projects</a>
+                        </li>
+                        <li class="w-100 btn text-start mb-2">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <a href="courses.html"> Courses</a>
+                        </li>
+                        <li class="w-100 btn text-start mb-2">
+                            <i class="fa-regular fa-circle-user"></i>
+                            <a href="friends.html"> Friends</a>
+                        </li>
+                        <li class="w-100 btn text-start mb-2">
+                            <i class="fa-regular fa-file"></i>
+                            <a href="files.html"> Files</a>
+                        </li>
+                        <li class="w-100 btn text-start mb-2">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <a href="plans.html"> Plans</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </aside>
+        <!-- !Page Inner-->
+        <div class="w-100">
+            <!-- ! Main NavBar -->
+            <nav class="navbar bg-body-tertiary py-3">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+                    <form role="search">
+                        <div class="input-group w-auto">
+                            <span class="input-group-text pe-0" id="basic-addon1"><i
+                                    class="fa-solid fa-magnifying-glass text-muted "></i></span>
+                            <input class="search form-control me-2  pe-0 border-start-0" type="search"
+                                placeholder="Type A Keyword" aria-label="Search">
+                        </div>
+                    </form>
+                    <div class="navEnd me-2 d-flex gap-3 align-items-center">
+                        <div class="notifaction position-relative">
+                            <i class="fa-regular fa-bell"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img class="img-fluid" src="img/avatar.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- !Page Content -->
+            <div class="pageContent p-4">
+                <div class="pageTitle">
+                    <h3 class="position-relative fs-2">Dashboard</h3>
+                </div>
+                <div class="dashboardCards">
+                    <div class="row py-3">
+                        <!-- ?Info -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="infoCard h-100 bg-white rounded-3 shadow-sm  p-0 overflow-hidden">
+                                <div
+                                    class="cardBanner d-flex justify-content-between bg-body-secondary p-2 position-relative">
+                                    <div class="cardTitle p-3">
+                                        <h4 class="fw-bolder">Welcome</h4>
+                                        <p class="text-muted fw-medium">Alyy</p>
+                                    </div>
+                                    <div class="bannerImage">
+                                        <img class="img-fluid" src="img/dashboard/welcome.png" alt="">
+                                    </div>
+                                    <div class="avatar position-absolute border border-5 border-white rounded-circle">
+                                        <img class="img-fluid" src="img/avatar.png" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="cardInfo d-flex justify-content-around align-items-center mt-5 py-4 text-center border border-start-0 border-end-0">
+                                    <div class="C-about">
+                                        <h6>Ali Khaled</h6>
+                                        <p class="text-body-tertiary fw-medium m-0">Developer</p>
+                                    </div>
+                                    <div class="C-projects">
+                                        <h6>30</h6>
+                                        <p class="text-body-tertiary fw-medium m-0">Projects</p>
+                                    </div>
+                                    <div class="C-earned">
+                                        <h6>$1000</h6>
+                                        <p class="text-body-tertiary fw-medium m-0">Earned</p>
+                                    </div>
+                                </div>
+                                <div class="cardButton w-100 text-end px-4 my-4">
+                                    <a href="" class="btn btn-primary py-0">Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?Draft -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="draftCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Quick Draft</h4>
+                                    <p class="text-muted fw-medium">Write A Draft For Your Ideas</p>
+                                </div>
+                                <form class="cardContent d-flex flex-column gap-2">
+                                    <input class="border-0 bg-body-tertiary  rounded-3 p-2" type="text"
+                                        placeholder="Title">
+                                    <textarea class="border-0 bg-body-tertiary  rounded-3 p-2 "
+                                        placeholder="Your Thought"></textarea>
+                                    <div class="button text-end mb-5">
+                                        <button class="btn btn-primary px-3 py-0">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- ?Target -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="targetCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Yearly Targets</h4>
+                                    <p class="text-muted fw-medium">Targets Of The Year</p>
+                                </div>
+                                <div class="cardContent">
+                                    <!-- ?Money -->
+                                    <div class="money cardItem d-flex my-4">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-dollar-sign fs-4 "></i>
+                                        </div>
+                                        <div class="itemContent p-2 w-100">
+                                            <p class="m-0 pb-2 text-muted">Money</p>
+                                            <h6 class="pb-1">$20.0000</h6>
+
+                                            <div class="bar position-relative">
+                                                <p class="m-0 px-1 text-white d-block position-absolute rounded-2">
+                                                    80%</p>
+                                                <div class="progress rounded-0" role="progressbar"
+                                                    aria-label="Basic example">
+                                                    <div class="progress-bar"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- ?Projects -->
+                                    <div class="projects cardItem d-flex my-4">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-code fs-4"></i>
+                                        </div>
+                                        <div class="itemContent p-2 w-100">
+                                            <p class="m-0 pb-2 text-muted">Projects</p>
+                                            <h6 class="pb-1">24</h6>
+
+                                            <div class="bar position-relative">
+                                                <p class="m-0 px-1 text-white d-block position-absolute rounded-2">
+                                                    55%</p>
+                                                <div class="progress rounded-0" role="progressbar"
+                                                    aria-label="Basic example">
+                                                    <div class="progress-bar"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- ?Team -->
+                                    <div class="team cardItem d-flex my-4">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-user fs-4"></i>
+                                        </div>
+                                        <div class="itemContent p-2 w-100">
+                                            <p class="m-0 pb-2 text-muted">Team</p>
+                                            <h6 class="pb-1">12</h6>
+
+                                            <div class="bar position-relative">
+                                                <p class="m-0 px-1 text-white d-block position-absolute rounded-2">
+                                                    75%</p>
+                                                <div class="progress rounded-0" role="progressbar"
+                                                    aria-label="Basic example">
+                                                    <div class="progress-bar"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- ?Statistics -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="statisticsCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Tickets Statistics</h4>
+                                    <p class="text-muted fw-medium">Everything About Support Tickets</p>
+                                </div>
+                                <div class="cardContent">
+                                    <div class="row gy-3">
+                                        <div class="col-md-6">
+                                            <div class="total text-center shadow border border-1 rounded-3 py-3 px-5">
+                                                <i class="fa-regular fa-rectangle-list fs-2 mb-3"></i>
+                                                <h5 class="fw-bold">2500</h5>
+                                                <p class="text-muted m-0">Total</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="pending text-center shadow border border-1 rounded-3 py-3 px-5">
+                                                <i class="fa fa-spinner fs-2 mb-3"></i>
+                                                <h5 class="fw-bold">500</h5>
+                                                <p class="text-muted m-0">Pending</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="closed text-center shadow border border-1 rounded-3 py-3 px-5">
+                                                <i class="fa-regular fa-circle-check fs-2 mb-3"></i>
+                                                <h5 class="fw-bold">1900</h5>
+                                                <p class="text-muted m-0">Closed</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="deleted text-center shadow border border-1 rounded-3 py-3 px-5">
+                                                <i class="fa-regular fa-rectangle-xmark fs-2 mb-3"></i>
+                                                <h5 class="fw-bold">100</h5>
+                                                <p class="text-muted m-0">Deleted</p>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?News -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="newsCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Last News</h4>
+                                </div>
+                                <div class="cardContent mt-4 ">
+                                    <div class="cardItem d-flex align-items-center border-bottom py-4">
+                                        <figure class="rounded-2 overflow-hidden m-0 me-3"><img class="img-fluid"
+                                                src="img/dashboard/news-01.png" alt=""></figure>
+                                        <div class="itemContent me-3">
+                                        <h6 class="fw-bolder">Created SASS Section</h6>
+                                        <p class="m-0 text-muted">New SASS Examples & Tutorials</p>
+                                    </div>
+                                        <span class="border rounded-2 p-1 ms-auto">3 Days Ago</span>
+                                    </div>
+                                    <div class="cardItem d-flex align-items-center border-bottom py-4">
+                                        <figure class="rounded-2 overflow-hidden m-0 me-3"><img class="img-fluid"
+                                                src="img/dashboard/news-02.png" alt=""></figure>
+                                        <div class="itemContent me-3">
+                                        <h6 class="fw-bolder">Changed The Design</h6>
+                                        <p class="m-0 text-muted">A Brand New Website Design</p>
+                                    </div>
+                                        <span class="border rounded-2 p-1 ms-auto">5 Days Ago</span>
+                                    </div>
+                                    <div class="cardItem d-flex align-items-center border-bottom py-4">
+                                        <figure class="rounded-2 overflow-hidden m-0 me-3"><img class="img-fluid"
+                                                src="img/dashboard/news-03.png" alt=""></figure>
+                                        <div class="itemContent me-3">
+                                        <h6 class="fw-bolder">Team Increased</h6>
+                                        <p class="m-0 text-muted">3 Developers Joined The Team</p>
+                                    </div>
+                                        <span class="border rounded-2 p-1 ms-auto">7 Days Ago</span>
+                                    </div>
+                                    <div class="cardItem d-flex align-items-center py-4">
+                                        <figure class="rounded-2 overflow-hidden m-0 me-3"><img class="img-fluid"
+                                                src="img/dashboard/news-04.png" alt=""></figure>
+                                        <div class="itemContent me-3">
+                                        <h6 class="fw-bolder">Added Payment Gateway</h6>
+                                        <p class="m-0  text-muted">Many New Payment Gateways Added</p>
+                                    </div>
+                                    <span class="border rounded-2 p-1 ms-auto">7 Days Ago</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?Tasks -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="tasksCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Latest Tasks</h4>
+                                </div>
+                                <div class="cardContent mt-4 ">
+                                    <div class="cardItem d-flex align-items-center border-bottom py-3">
+                                        <div class="itemContent me-3">
+                                        <h6 class="fw-bolder">Record One New Video</h6>
+                                        <p class="m-0 text-muted fw-medium">Record Python Create Exe Project</p>
+                                    </div>
+                                    <i class="fa-regular fa-trash-can ms-auto"></i>
+                                    </div>
+                                    <div class="cardItem d-flex align-items-center border-bottom py-3">
+                                        <div class="itemContent me-3">
+                                        <h6 class="fw-bolder">Write Article</h6>
+                                        <p class="m-0 text-muted fw-medium">Write Low Level vs High Level Languages</p>
+                                    </div>
+                                    <i class="fa-regular fa-trash-can ms-auto"></i>
+                                    </div>
+                                    <div class="cardItem d-flex align-items-center border-bottom py-3">
+                                        <div class="itemContent me-3">
+                                        <h6 class="fw-bolder">Finish Project</h6>
+                                        <p class="m-0 text-muted fw-medium">Publish Academy Programming Project</p>
+                                    </div>
+                                    <i class="fa-regular fa-trash-can ms-auto"></i>
+                                    </div>
+                                    <div class="cardItem d-flex align-items-center border-bottom py-3 disabled">
+                                        <div class="itemContent me-3">
+                                        <h6 class="fw-bolder text-muted  text-decoration-line-through">Attend The Meeting</h6>
+                                        <p class="m-0 text-muted fw-medium text-decoration-line-through">Attend The Project Business Analysis Meeting</p>
+                                    </div>
+                                    <i class="fa-regular fa-trash-can text-muted ms-auto"></i>
+                                    </div>
+                                    <div class="cardItem d-flex align-items-center  py-3">
+                                        <div class="itemContent me-3">
+                                        <h6 class="fw-bolder">Finish Lesson</h6>
+                                        <p class="m-0 text-muted fw-medium">Finish Teaching Flex Box</p>
+                                    </div>
+                                    <i class="fa-regular fa-trash-can ms-auto"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?Top Items -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="targetCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Yearly Targets</h4>
+                                    <p class="text-muted fw-medium">Targets Of The Year</p>
+                                </div>
+                                <div class="cardContent">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?Uploads -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="targetCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Yearly Targets</h4>
+                                    <p class="text-muted fw-medium">Targets Of The Year</p>
+                                </div>
+                                <div class="cardContent">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?Progress -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="targetCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Yearly Targets</h4>
+                                    <p class="text-muted fw-medium">Targets Of The Year</p>
+                                </div>
+                                <div class="cardContent">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?Reminders -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="targetCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Yearly Targets</h4>
+                                    <p class="text-muted fw-medium">Targets Of The Year</p>
+                                </div>
+                                <div class="cardContent">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?Post -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="targetCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Yearly Targets</h4>
+                                    <p class="text-muted fw-medium">Targets Of The Year</p>
+                                </div>
+                                <div class="cardContent">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?Social Media -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="targetCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Yearly Targets</h4>
+                                    <p class="text-muted fw-medium">Targets Of The Year</p>
+                                </div>
+                                <div class="cardContent">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
