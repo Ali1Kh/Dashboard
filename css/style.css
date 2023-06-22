@@ -22,10 +22,6 @@ a {
   text-decoration: none;
 }
 
-.btn:first-child:active {
-  border-color: transparent;
-}
-
 /* !Offcanvas */
 .sidebar {
   width: 15%;
@@ -55,11 +51,15 @@ a {
   transform: translate(-50%, -50%);
   background-color: black;
 }
-
 .offCanvas .pages ul .btn:hover {
   background-color: var(--grayMainColor);
 }
-
+.offCanvas .pages ul .btn.activeLink{
+  background-color: var(--grayMainColor);
+}
+.btn:first-child:active {
+  border-color: transparent;
+}
 /* !Main NavBar */
 .navbar .input-group-text {
   background-color: white;
@@ -211,15 +211,33 @@ a {
 font-size: 14px;
 
 }
-.newsCard .cardItem span{
+ .cardItem span.shape{
   font-size: 12px;
   background-color: var(--grayMainColor);
 }
 /* ?Tasks */
-.tasksCard .cardItem i:not(.disabled i){
+.tasksCard .cardItem i{
 cursor: pointer;
 transition: color 0.5s;
 }
+.tasksCard .cardItem.disabled i{
+  cursor: not-allowed;
+  }
+
 .tasksCard .cardItem i:hover:not(.disabled i){
 color: var(--redColor);  
+}
+.topCard .cardItem{
+  padding-block:10px;
+}
+/* ?Updates */
+.uploadCard .cardItem figure{
+  width: 40px;
+  height: 40px;
+}
+.uploadCard .cardItem{
+padding-block: 5px !important;
+}
+.uploadCard .cardItem h6{
+  font-weight: 600 ;
 }
