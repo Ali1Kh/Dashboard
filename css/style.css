@@ -4,9 +4,43 @@
   --orangeColor: #f59e0b;
   --greenColor: #22c55e;
   --blueColor: #0d6efd;
-  --redColor:#f44336;
+  --redColor: #f44336;
+  --aquaColor: #d2edfd;
+  --redWhiteColor: #fecccd;
   --mainBackgroundColor: #f0f5f8;
 }
+/* ?Colors */
+.orangeColor {
+  color: var(--orangeColor);
+}
+.greenColor {
+  color: var(--greenColor);
+}
+.greenColorBg {
+  background-color: var(--greenColor);
+}
+.redColor {
+  color: var(--redColor);
+}
+.redColorBg{
+  background-color: var(--redColor);
+}
+.blueColor {
+  color: var(--blueColor);
+}
+.blueColorBg {
+  background-color: var(--blueColor);
+}
+.aquaColorBG {
+  background-color: var(--aquaColor);
+}
+.redWhiteColorBG {
+  background-color: var(--redWhiteColor);
+}
+.bgRedColor {
+  background-color: red;
+}
+
 @font-face {
   font-family: Open_Sans;
   src: url(./../fonts/Open_Sans/static/OpenSans-Regular.ttf);
@@ -21,10 +55,13 @@ a {
   color: unset;
   text-decoration: none;
 }
-
+.avatar {
+  width: 70px;
+  height: 70px;
+}
 /* !Offcanvas */
 .sidebar {
-  width: 15%;
+  width: 13%;
 }
 .offCanvas .sideBarTitle {
   width: fit-content;
@@ -54,7 +91,7 @@ a {
 .offCanvas .pages ul .btn:hover {
   background-color: var(--grayMainColor);
 }
-.offCanvas .pages ul .btn.activeLink{
+.offCanvas .pages ul .btn.activeLink {
   background-color: var(--grayMainColor);
 }
 .btn:first-child:active {
@@ -69,10 +106,11 @@ a {
   outline: none;
   box-shadow: unset;
 }
-.avatar {
+.navbar .avatar {
   width: 35px;
   height: 35px;
 }
+
 /* !Page Content */
 .pageContent {
   background-color: var(--mainBackgroundColor);
@@ -103,8 +141,6 @@ a {
 .infoCard .cardBanner .avatar {
   left: 5%;
   top: 75%;
-  width: 70px;
-  height: 70px;
 }
 /* ?Draft */
 .draftCard form * {
@@ -126,7 +162,7 @@ a {
   background-color: #fdedcf;
 }
 
-.targetCard .cardContent .team .icon{
+.targetCard .cardContent .team .icon {
   background-color: #d2f2df;
 }
 .targetCard .cardContent .money .icon i {
@@ -144,7 +180,7 @@ a {
 
 .targetCard .cardContent .money .progress-bar {
   width: 80%;
-  background-color:var(--blueColor) ;
+  background-color: var(--blueColor);
 }
 .targetCard .cardContent .projects .progress-bar {
   width: 55%;
@@ -168,7 +204,7 @@ a {
   left: 55%;
   background-color: var(--orangeColor);
 }
-.targetCard .team .bar p{
+.targetCard .team .bar p {
   left: 75%;
   background-color: var(--greenColor);
 }
@@ -190,54 +226,153 @@ a {
   border-top-color: var(--greenColor);
 }
 /* ?Statistics */
-.statisticsCard .total i{
+.statisticsCard .total i {
   color: var(--orangeColor);
 }
-.statisticsCard .pending i{
+.statisticsCard .pending i {
   color: var(--blueColor);
 }
-.statisticsCard .closed i{
+.statisticsCard .closed i {
   color: var(--greenColor);
 }
-.statisticsCard .deleted i{
+.statisticsCard .deleted i {
   color: var(--redColor);
 }
 /* ?News */
-.newsCard .cardItem figure{
+.newsCard .cardItem figure {
   width: 20%;
   height: 20%;
 }
-.newsCard .cardItem p{
-font-size: 14px;
-
+.newsCard .cardItem p {
+  font-size: 14px;
 }
- .cardItem span.shape{
+.cardItem span.shape {
   font-size: 12px;
   background-color: var(--grayMainColor);
 }
 /* ?Tasks */
-.tasksCard .cardItem i{
-cursor: pointer;
-transition: color 0.5s;
+.tasksCard .cardItem i {
+  cursor: pointer;
+  transition: color 0.5s;
 }
-.tasksCard .cardItem.disabled i{
+.tasksCard .cardItem.disabled i {
   cursor: not-allowed;
-  }
-
-.tasksCard .cardItem i:hover:not(.disabled i){
-color: var(--redColor);  
 }
-.topCard .cardItem{
-  padding-block:10px;
+
+.tasksCard .cardItem i:hover:not(.disabled i) {
+  color: var(--redColor);
+}
+.topCard .cardItem {
+  padding-block: 10px;
 }
 /* ?Updates */
-.uploadCard .cardItem figure{
+.uploadCard .cardItem figure {
   width: 40px;
   height: 40px;
 }
-.uploadCard .cardItem{
-padding-block: 5px !important;
+.uploadCard .cardItem {
+  padding-block: 5px !important;
 }
-.uploadCard .cardItem h6{
-  font-weight: 600 ;
+.uploadCard .cardItem h6 {
+  font-weight: 600;
+}
+/* ?tasks */
+.progressCard .cardItem li .Taskicon {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  background-color: var(--grayMainColor);
+}
+
+.progressCard .cardItem li.current .Taskicon i {
+  animation-name: pulsing;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+.progressCard .cardItem li:last-of-type .Taskicon i {
+  color: var(--grayMainColor);
+}
+@keyframes pulsing {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.progressCard .cardItem ul::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  left: 13px;
+  z-index: -1;
+  background-color: var(--blueColor);
+}
+/* ?Reminders */
+.remindersCard .cardContent {
+  font-size: 12px;
+}
+.remindersCard .cardItem .remindersIcon::after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 2px;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.remindersCard .cardItem:first-of-type .remindersIcon::after {
+  background-color: var(--blueColor);
+}
+.remindersCard .cardItem:nth-of-type(2) .remindersIcon:after {
+  background-color: var(--greenColor);
+}
+.remindersCard .cardItem:nth-of-type(3) .remindersIcon::after {
+  background-color: var(--orangeColor);
+}
+.remindersCard .cardItem:nth-of-type(4) .remindersIcon::after {
+  background-color: var(--redColor);
+}
+/* ?Social */
+.socialCard .socialIcon {
+  width: 55px;
+  height: 55px;
+  transition: rotate 0.3s;
+}
+.socialCard .socialIcon:hover {
+  rotate: 5deg;
+}
+.socialCard .yt .btn:hover {
+  background-color: red !important ;
+}
+
+/* ?Project Table */
+.projectCard .team {
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.projectCard .team:first-of-type{
+  left: 10%;
+}
+.projectCard .team:nth-of-type(2){
+  left: 25%;
+}
+.projectCard .team:nth-of-type(3){
+  left: 40%;
+}
+.projectCard .team:nth-of-type(4){
+  left: 55%;
+}
+.projectCard tr td button{
+  font-size: 14px;
+}
+.projectCard table tr{
+transition: background-color 800ms;
+}
+.projectCard table tr:not(thead tr):hover{
+  background-color: var(--grayMainColor);
 }
