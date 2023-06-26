@@ -3,7 +3,7 @@
   .offCanvas .sideBarTitle h5::after {
     width: 0%;
   }
-  .sidebar .pages ul li a {
+  .sidebar .pages ul li a span{
     display: none;
   }
   

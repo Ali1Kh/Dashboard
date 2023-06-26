@@ -22,7 +22,7 @@
 .redColor {
   color: var(--redColor);
 }
-.redColorBg{
+.redColorBg {
   background-color: var(--redColor);
 }
 .blueColor {
@@ -39,6 +39,21 @@
 }
 .bgRedColor {
   background-color: red;
+}
+.cursorPointer {
+  cursor: pointer;
+}
+/* ?Bootstrap*/
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: var(--bs-border-color) !important;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0;
 }
 
 @font-face {
@@ -355,24 +370,125 @@ a {
   top: 50%;
   transform: translateY(-50%);
 }
-.projectCard .team:first-of-type{
+.projectCard .team:first-of-type {
   left: 10%;
 }
-.projectCard .team:nth-of-type(2){
+.projectCard .team:nth-of-type(2) {
   left: 25%;
 }
-.projectCard .team:nth-of-type(3){
+.projectCard .team:nth-of-type(3) {
   left: 40%;
 }
-.projectCard .team:nth-of-type(4){
+.projectCard .team:nth-of-type(4) {
   left: 55%;
 }
-.projectCard tr td button{
+.projectCard tr td button {
   font-size: 14px;
 }
-.projectCard table tr{
-transition: background-color 800ms;
+.projectCard table tr {
+  transition: background-color 800ms;
 }
-.projectCard table tr:not(thead tr):hover{
+.projectCard table tr:not(thead tr):hover {
   background-color: var(--grayMainColor);
+}
+/* !Settings */
+/* ?Site Control */
+.controlCard .cardItem h6:first-of-type {
+  font-size: 17px;
+}
+.controlCard .cardItem p:first-of-type {
+  font-size: 12px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border: 1px solid #adb5bd;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.27em;
+  bottom: 0.25em;
+  background-color: #adb5bd;
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #007bff;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(1.4em);
+  background-color: #fff;
+}
+.cardItem input,
+.cardItem textarea {
+  font-size: 14px;
+}
+.cardItem textarea {
+  resize: none;
+  min-height: 140px;
+}
+/* ? Social Info */
+.settingCards .socialCard .input-group span {
+  width: 40px;
+}
+.settingCards .socialCard :has(input:focus) i {
+  color: black !important;
+}
+/* ?Widgets Control */
+.widgetsCard .cardItem .itemContent * {
+  cursor: pointer;
+}
+.settingCards .cardItem .form-check-input {
+  width: 18px;
+  height: 18px;
+}
+.widgetsCard .cardItem .itemContent .form-check-label {
+  font-size: 15px;
+}
+/* ?Backup */
+.backupCard .cardItem .form-check * {
+  cursor: pointer;
+}
+.backupCard .serversItem .itemContent {
+  transition: border-color 500ms,color 500ms;
+}
+.backupCard .serversItem .itemContent:hover {
+  border-color: var(--blueColor) !important;
+  color: var(--blueColor);
 }

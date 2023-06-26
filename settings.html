@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
     <main class="d-flex">
         <!-- !Sidebar -->
@@ -20,37 +21,53 @@
                 </div>
                 <div class="pages">
                     <ul class="d-flex flex-column p-0 align-items-start">
-                        <li class="w-100 btn text-start mb-2">
-                            <i class="fa-regular fa-chart-bar"></i>
-                            <a href="dashboard.html"> Dashboard</a>
+                        <li class="w-100">
+                            <a class="w-100 btn text-start mb-2" href="dashboard.html">
+                                <i class="fa-regular fa-chart-bar"></i>
+                                <span>Dashboard</span>
+                            </a>
                         </li>
-                        <li class="w-100 btn text-start mb-2 activeLink">
-                            <i class="fa-solid fa-gear"></i>
-                            <a class="mb-2 w-100" href="settings.html"> Settings</a>
+                        <li class="w-100">
+                            <a class="w-100 btn text-start mb-2 activeLink" href="settings.html">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Settings</span>
+                            </a>
                         </li>
-                        <li class="w-100 btn text-start mb-2">
-                            <i class="fa-regular fa-user"></i>
-                            <a class="mb-2 w-100" href="profile.html"> Profile</a>
+                        <li class="w-100">
+                            <a class="w-100 btn text-start mb-2" href="profile.html">
+                                <i class="fa-regular fa-user"></i>
+                                <span>Profile</span>
+                            </a>
                         </li>
-                        <li class="w-100 btn text-start mb-2">
-                            <i class="fa-solid fa-diagram-project"></i>
-                            <a href="projects.html"> Projects</a>
+                        <li class="w-100">
+                            <a class="w-100 btn text-start mb-2" href="projects.html">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <span>Projects</span>
+                            </a>
                         </li>
-                        <li class="w-100 btn text-start mb-2">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <a href="courses.html"> Courses</a>
+                        <li class="w-100">
+                            <a class="w-100 btn text-start mb-2" href="courses.html">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>Courses</span>
+                            </a>
                         </li>
-                        <li class="w-100 btn text-start mb-2">
-                            <i class="fa-regular fa-circle-user"></i>
-                            <a href="friends.html"> Friends</a>
+                        <li class="w-100">
+
+                            <a class="w-100 btn text-start mb-2" href="friends.html">
+                                <i class="fa-regular fa-circle-user"></i>
+                                <span>Friends</span>
+                            </a>
                         </li>
-                        <li class="w-100 btn text-start mb-2">
-                            <i class="fa-regular fa-file"></i>
-                            <a href="files.html"> Files</a>
+                        <li class="w-100">
+                            <a class="w-100 btn text-start mb-2" href="files.html">
+                                <i class="fa-regular fa-file"></i>
+                                <span>Files</span> </a>
                         </li>
-                        <li class="w-100 btn text-start mb-2">
-                            <i class="fa-regular fa-credit-card"></i>
-                            <a href="plans.html"> Plans</a>
+                        <li class="w-100">
+                            <a class="w-100 btn text-start mb-2" href="plans.html">
+                                <i class="fa-regular fa-credit-card"></i>
+                                <span>Plans</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -84,9 +101,232 @@
                 </div>
             </nav>
             <!-- !Page Content -->
+            <div class="pageContent p-4">
+                <div class="pageTitle">
+                    <h3 class="position-relative fs-2 fw-bold">Settings</h3>
+                </div>
+                <div class="settingCards">
+                    <div class="row py-3">
+                        <!-- ?Control -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="controlCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Site Control</h4>
+                                    <p class="text-muted fw-medium">Control The Website If There Is Maintenance</p>
+                                </div>
+                                <div class="cardItem d-flex align-items-center mb-3">
+                                    <div class="itemContent">
+                                        <h6>Website Control</h6>
+                                        <p class="text-muted fw-medium">Open/Close Website And Type The Reason</p>
+                                    </div>
+                                    <label class="switch ms-auto">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="cardItem">
+                                    <textarea class="form-control" placeholder="Close Message Content"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?Genral Info -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="controlCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">General Info</h4>
+                                    <p class="text-muted fw-medium">General Information About Your Account</p>
+                                </div>
+                                <div class="cardItem d-flex flex-column">
+                                    <label for="fname" class="text-body-tertiary pb-1 fw-semibold">First Name</label>
+                                    <input class="form-control mb-2" type="text" id="fname" placeholder="First Name">
+                                    <label class="text-body-tertiary pb-1 fw-semibold" for="lname">Last Name</label>
+                                    <input class="form-control mb-2" type="text" id="lname" placeholder="Last Name">
+                                    <label class="text-body-tertiary pb-1 fw-semibold" for="lname">Email</label>
+                                    <div class="emailInput d-flex align-items-center">
+                                        <input class="form-control me-2" type="email" id="email"
+                                            placeholder="ali@lol.com" disabled>
+                                        <a href="" class="text-primary">Change</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?Security -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="securityCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Security Info</h4>
+                                    <p class="text-muted fw-medium">Security Information About Your Account</p>
+                                </div>
 
+                                <div class="cardItem d-flex align-items-center mb-3 border-bottom">
+                                    <div class="itemContent">
+                                        <h6>Password</h6>
+                                        <p class="text-muted fw-medium">Last Change On 25/10/2021</p>
+                                    </div>
+                                    <button class="btn btn-primary ms-auto p-1">Change</button>
+                                </div>
+
+                                <div class="cardItem d-flex align-items-center mb-3 border-bottom">
+                                    <div class="itemContent">
+                                        <h6>Two-Factor Authentication</h6>
+                                        <p class="text-muted fw-medium">Enable/Disable The Feature</p>
+                                    </div>
+                                    <label class="switch ms-auto">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+
+                                <div class="cardItem d-flex align-items-center mb-3">
+                                    <div class="itemContent">
+                                        <h6>Devices</h6>
+                                        <p class="text-muted fw-medium">Check The Login Devices List</p>
+                                    </div>
+                                    <button class="btn bg-body-secondary ms-auto p-1 text-black">Devices</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- ?Social Info -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="socialCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Social Info</h4>
+                                    <p class="text-muted fw-medium">Social Media Information</p>
+                                </div>
+                                <div class="cardItem my-3">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="fa-brands fa-twitter text-body-tertiary"></i></span>
+                                        <input type="text" class="form-control py-2" placeholder="Twitter Username"
+                                            aria-label="Username" aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                                <div class="cardItem my-3">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="fa-brands fa-facebook-f text-body-tertiary"></i></span>
+                                        <input type="text" class="form-control py-2" placeholder="Facebook Username"
+                                            aria-label="Username" aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                                <div class="cardItem my-3">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="fa-brands fa-linkedin text-body-tertiary"></i></span>
+                                        <input type="text" class="form-control py-2" placeholder="Linkindin Username"
+                                            aria-label="Username" aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                                <div class="cardItem my-3">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="fa-brands fa-youtube text-body-tertiary"></i></span>
+                                        <input type="text" class="form-control py-2" placeholder="Youtube Username"
+                                            aria-label="Username" aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ?Widgets Control -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="widgetsCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Widgets Control</h4>
+                                    <p class="text-muted fw-medium">Show/Hide Widgets</p>
+                                </div>
+                                <div class="cardItem d-flex flex-column gap-3 justify-content-center">
+                                    <div class="itemContent form-check  d-flex align-items-center">
+                                        <input type="checkbox" id="draft" class="form-check-input me-3">
+                                        <label for="draft" class="form-check-label  fw-semibold text-black">Quick
+                                            Draft</label>
+                                    </div>
+
+                                    <div class="itemContent form-check d-flex align-items-center">
+                                        <input type="checkbox" id="target" class="form-check-input me-3">
+                                        <label for="target" class="form-check-label  fw-semibold text-black">Yearly
+                                            Targets</label>
+                                    </div>
+
+                                    <div class="itemContent form-check">
+                                        <input type="checkbox" id="tickets" class="form-check-input me-3">
+                                        <label for="tickets" class="form-check-label  fw-semibold text-black">Tickets
+                                            Statistics</label>
+                                    </div>
+
+                                    <div class="itemContent form-check">
+                                        <input type="checkbox" id="news" class="form-check-input me-3">
+                                        <label for="news" class="form-check-label  fw-semibold text-black">Latest
+                                            News</label>
+                                    </div>
+
+                                    <div class="itemContent form-check">
+                                        <input type="checkbox" id="tasks" class="form-check-input me-3">
+                                        <label for="tasks" class="form-check-label  fw-semibold text-black">Latest
+                                            Tasks</label>
+                                    </div>
+
+                                    <div class="itemContent form-check">
+                                        <input type="checkbox" id="top" class="form-check-input me-3">
+                                        <label for="top" class="form-check-label  fw-semibold text-black">Top Search
+                                            Items</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- ?Backup -->
+                        <div class="col-xxl-4 col-xl-6 gy-3">
+                            <div class="backupCard h-100 bg-white rounded-3 shadow-sm  p-4 overflow-hidden">
+                                <div class="cardTitle">
+                                    <h4 class="fw-bolder">Backup Manager</h4>
+                                    <p class="text-muted fw-medium">Control Backup Time And Location </p>
+                                </div>
+                                <div class="cardItem border-bottom">
+                                    <div class="form-check d-flex align-items-center gap-2 mb-3">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label fw-bold" for="exampleRadios1">
+                                            Daily
+                                        </label>
+                                      </div>
+                                      <div class="form-check d-flex align-items-center gap-2 mb-3">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                        <label class="form-check-label fw-bold" for="exampleRadios2">
+                                            Weekly
+                                        </label>
+                                      </div>
+                                      <div class="form-check d-flex align-items-center gap-2 mb-3">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
+                                        <label class="form-check-label fw-bold" for="exampleRadios3">
+                                            Monthly
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="serversItem d-flex gap-4 justify-content-center align-items-center mt-4">
+                                 <div class="itemContent cursorPointer w-100 p-4 d-flex flex-column align-items-center rounded-3 border border-1">
+                                    <i class="fa fa-server pb-2"></i>
+                                    <p class="m-0">Megaman</p>
+                                 </div>
+                                 <div class="itemContent cursorPointer w-100 p-4 d-flex flex-column align-items-center rounded-3 border border-1">
+                                    <i class="fa fa-server pb-2"></i>
+                                    <p class="m-0">Zero</p>
+                                 </div>
+                                 <div class="itemContent cursorPointer w-100 p-4 d-flex flex-column align-items-center rounded-3 border border-1">
+                                    <i class="fa fa-server pb-2"></i>
+                                    <p class="m-0">Sigma</p>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
 
         </div>
-</main>
+    </main>
 </body>
+
 </html>
