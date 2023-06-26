@@ -6,5 +6,10 @@
   .sidebar .pages ul li a span{
     display: none;
   }
-  
+}
+
+@media screen and (width > 1400px){
+  .native-5col{
+    width: 20%;
+  }
 }

@@ -37,13 +37,19 @@
 .redWhiteColorBG {
   background-color: var(--redWhiteColor);
 }
+.orangeWhiteColorBg{
+  background-color: #fdedcf;
+}
+.greenWhiteBg{
+  background-color: #d2f2df;
+}
 .bgRedColor {
   background-color: red;
 }
 .cursorPointer {
   cursor: pointer;
 }
-/* ?Bootstrap*/
+/* ?Framwork*/
 .form-control:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
@@ -55,6 +61,7 @@
 .form-check-input:focus {
   box-shadow: 0 0 0;
 }
+
 
 @font-face {
   font-family: Open_Sans;
@@ -73,6 +80,9 @@ a {
 .avatar {
   width: 70px;
   height: 70px;
+}
+main{
+  min-height: 100vh;
 }
 /* !Offcanvas */
 .sidebar {
@@ -112,6 +122,11 @@ a {
 .btn:first-child:active {
   border-color: transparent;
 }
+
+.innerPage{
+  background-color: var(--mainBackgroundColor);
+  min-height: 100% !important;
+}
 /* !Main NavBar */
 .navbar .input-group-text {
   background-color: white;
@@ -127,8 +142,8 @@ a {
 }
 
 /* !Page Content */
-.pageContent {
-  background-color: var(--mainBackgroundColor);
+.pageContent{
+ background-color: var(--mainBackgroundColor); 
 }
 .pageContent .pageTitle {
   width: fit-content;
@@ -173,13 +188,7 @@ a {
 .targetCard .cardContent .money .icon {
   background-color: #cce2fe;
 }
-.targetCard .cardContent .projects .icon {
-  background-color: #fdedcf;
-}
 
-.targetCard .cardContent .team .icon {
-  background-color: #d2f2df;
-}
 .targetCard .cardContent .money .icon i {
   color: var(--blueColor);
 }
@@ -491,4 +500,34 @@ a {
 .backupCard .serversItem .itemContent:hover {
   border-color: var(--blueColor) !important;
   color: var(--blueColor);
+}
+/* !Courses Page */
+.coursesPage .cardFooter *{
+font-size: 14px;
+}
+/* !Files Page */
+.filePage .fileIcon{
+ width: 46px;
+ height: 46px;
+}
+.filePage .uploadBtn{
+
+}
+.filePage .uploadBtn:hover i{
+animation: jump 400ms alternate infinite;
+}
+@keyframes jump {
+from{
+transform: translateY(-6px);
+}
+}
+.filePage .cardItem .itemContent ,.filePage .cardItem span{
+  font-size: 13px;
+}
+.filePage .fileImage{
+  width: 60px;
+  height: 60px;
+}
+.filePage .cardFooter{
+  font-size: 14px;
 }
