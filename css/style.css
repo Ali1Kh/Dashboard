@@ -40,10 +40,10 @@
 .redWhiteColorBG {
   background-color: var(--redWhiteColor);
 }
-.orangeWhiteColorBg{
+.orangeWhiteColorBg {
   background-color: #fdedcf;
 }
-.greenWhiteBg{
+.greenWhiteBg {
   background-color: #d2f2df;
 }
 .bgRedColor {
@@ -65,7 +65,7 @@
   box-shadow: 0 0 0;
 }
 
-.btn-red{
+.btn-red {
   --bs-btn-color: #fff;
   --bs-btn-bg: var(--redColor);
   --bs-btn-border-color: var(--redColor);
@@ -92,7 +92,7 @@ a {
   width: 70px;
   height: 70px;
 }
-main{
+main {
   min-height: 100vh;
 }
 /* !Offcanvas */
@@ -134,7 +134,7 @@ main{
   border-color: transparent;
 }
 
-.innerPage{
+.innerPage {
   background-color: var(--mainBackgroundColor);
   min-height: 100% !important;
 }
@@ -153,8 +153,8 @@ main{
 }
 
 /* !Page Content */
-.pageContent{
- background-color: var(--mainBackgroundColor); 
+.pageContent {
+  background-color: var(--mainBackgroundColor);
 }
 .pageContent .pageTitle {
   width: fit-content;
@@ -380,7 +380,6 @@ main{
   rotate: 5deg;
 }
 
-
 /* ?Project Table */
 .projectCard .team {
   width: 45px;
@@ -504,61 +503,93 @@ main{
   cursor: pointer;
 }
 .backupCard .serversItem .itemContent {
-  transition: border-color 500ms,color 500ms;
+  transition: border-color 500ms, color 500ms;
 }
 .backupCard .serversItem .itemContent:hover {
   border-color: var(--blueColor) !important;
   color: var(--blueColor);
 }
 /* !Courses Page */
-.coursesPage .cardFooter *{
-font-size: 14px;
+.coursesPage .cardFooter * {
+  font-size: 14px;
 }
 /* !Files Page */
-.filePage .fileIcon{
- width: 46px;
- height: 46px;
+.filePage .fileIcon {
+  width: 46px;
+  height: 46px;
 }
-.filePage .uploadBtn{
-
+.filePage .uploadBtn {
 }
-.filePage .uploadBtn:hover i{
-animation: jump 400ms alternate infinite;
+.filePage .uploadBtn:hover i {
+  animation: jump 400ms alternate infinite;
 }
 @keyframes jump {
-from{
-transform: translateY(-6px);
+  from {
+    transform: translateY(-6px);
+  }
 }
-}
-.filePage .cardItem .itemContent ,.filePage .cardItem span{
+.filePage .cardItem .itemContent,
+.filePage .cardItem span {
   font-size: 13px;
 }
-.filePage .fileImage{
+.filePage .fileImage {
   width: 60px;
   height: 60px;
 }
-.filePage .cardFooter{
+.filePage .cardFooter {
   font-size: 14px;
 }
 /* !Plans */
-.planCards .topic .priceTopic{
+.planCards .topic .priceTopic {
   width: fit-content;
 }
-.planCards .topic .priceTopic span:first-of-type{
-top: 0;
-left: -18%;
+.planCards .topic .priceTopic span:first-of-type {
+  top: 0;
+  left: -18%;
 }
-.planCards ul li span{
-  font-size:15px ;
+.planCards ul li span {
+  font-size: 15px;
 }
 /* !friends */
-.frPage .friendImg{
+.frPage .friendImg {
   width: 100px;
   height: 100px;
 }
 .frPage .cardFooter {
-  font-size: 15px;
+  font-size: 14px;
 }
-.frPage .cardFooter .buttons *{
+.frPage .cardFooter .buttons * {
   font-size: 12px;
+}
+.frPage .cardItem p {
+  font-size: 13px;
+}
+.frPage .infoItem ul {
+  width: fit-content;
+}
+
+.frPage .infoItem.vip {
+  position: relative;
+}
+.frPage .infoItem.vip::after {
+  content: "VIP";
+  position: absolute;
+  top: 50%;
+  right: 0;
+transform: translateY(-50%);
+  font-size: 40px;
+  font-weight: 700;
+  color: rgba(245, 158, 11,0.2);
+}
+
+.frPage .infoItem ul li span {
+  font-size: 14px;
+}
+
+.frPage .cardIcons i {
+  transition: color 500ms, background-color 500ms;
+}
+.frPage .cardIcons i:hover {
+  color: white;
+  background-color: var(--blueColor) !important;
 }
