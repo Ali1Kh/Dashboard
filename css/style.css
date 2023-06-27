@@ -13,6 +13,9 @@
 .orangeColor {
   color: var(--orangeColor);
 }
+.orangeColorBg {
+  background-color: var(--orangeColor);
+}
 .greenColor {
   color: var(--greenColor);
 }
@@ -62,6 +65,14 @@
   box-shadow: 0 0 0;
 }
 
+.btn-red{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--redColor);
+  --bs-btn-border-color: var(--redColor);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--redColor);
+  --bs-btn-hover-border-color: var(--redColor);
+}
 
 @font-face {
   font-family: Open_Sans;
@@ -368,9 +379,7 @@ main{
 .socialCard .socialIcon:hover {
   rotate: 5deg;
 }
-.socialCard .yt .btn:hover {
-  background-color: red !important ;
-}
+
 
 /* ?Project Table */
 .projectCard .team {
@@ -532,10 +541,24 @@ transform: translateY(-6px);
   font-size: 14px;
 }
 /* !Plans */
+.planCards .topic .priceTopic{
+  width: fit-content;
+}
 .planCards .topic .priceTopic span:first-of-type{
 top: 0;
-left: 36%;
+left: -18%;
 }
 .planCards ul li span{
   font-size:15px ;
+}
+/* !friends */
+.frPage .friendImg{
+  width: 100px;
+  height: 100px;
+}
+.frPage .cardFooter {
+  font-size: 15px;
+}
+.frPage .cardFooter .buttons *{
+  font-size: 12px;
 }

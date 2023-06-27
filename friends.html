@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
     <main class="d-flex">
         <!-- !Sidebar -->
@@ -27,9 +28,9 @@
                             </a>
                         </li>
                         <li class="w-100">
-                            <a class="w-100 btn text-start mb-2" href="settings.html"> 
-                              <i class="fa-solid fa-gear"></i>  
-                              <span>Settings</span>
+                            <a class="w-100 btn text-start mb-2" href="settings.html">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Settings</span>
                             </a>
                         </li>
                         <li class="w-100">
@@ -100,16 +101,45 @@
                 </div>
             </nav>
             <!-- !Page Content -->
-            <div class="pageContent p-4">
+            <div class="frPage pageContent p-4">
                 <div class="pageTitle">
                     <h3 class="position-relative fs-2 fw-bold">Friends</h3>
                 </div>
-                
+                <div class="row py-3">
+                    <div class="native-5col col-md-6 col-lg-4 col-xl-3 gy-3">
+                        <div class="cardInner h-100 bg-white rounded-3 shadow-sm p-3  overflow-hidden">
+                            <div class="cardContent pb-2  border-bottom">
+                                <div
+                                    class="fileItem pt-4 position-relative d-flex flex-column justify-content-center align-items-center">
+                                    <i
+                                        class="fa fa-download position-absolute top-0 start-0 text-body-tertiary"></i>
+
+                                    <figure class="friendImg">
+                                        <img class="img-fluid rounded-circle" src="img/friends/friend-01.jpg" alt="">
+                                    </figure>
+
+                                    <h6>Ahmed Nasser</h6>
+                                    <p class="m-0 text-body-tertiary  fw-bold">JavaScript Developer</p>
+                                </div>
+            
+                            </div>
+                            <div
+                                class="cardFooter fw-bold text-body-tertiary d-flex justify-content-between pt-2">
+                                <span>Joined 20/6/2020</span>
+                                <div class="buttons d-flex align-items-center gap-2">
+                                    <a href="" class="btn btn-primary py-1">Profile</a>
+                                    <a href="" class="btn btn-red py-1">Remove</a>
+                                </div>
+                            </div>
+                        </div>  
+
+                    </div>
 
 
+                </div>
             </div>
-
         </div>
-</main>
+    </main>
 </body>
+
 </html>
