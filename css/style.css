@@ -531,3 +531,11 @@ transform: translateY(-6px);
 .filePage .cardFooter{
   font-size: 14px;
 }
+/* !Plans */
+.planCards .topic .priceTopic span:first-of-type{
+top: 0;
+left: 36%;
+}
+.planCards ul li span{
+  font-size:15px ;
+}
