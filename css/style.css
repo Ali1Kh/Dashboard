@@ -593,3 +593,28 @@ transform: translateY(-50%);
   color: white;
   background-color: var(--blueColor) !important;
 }
+
+/* !Profile Page */
+.profilePage .aboutContent figure{
+  width: 120px;
+  height: 120px;
+}
+.profilePage .progress{
+  width: 150px;
+  height: 7px !important;
+}
+.profilePage .progress-bar{
+  width: 65%;
+}
+.profilePage .infoContent .form-check .form-check-input{
+  width: 82px !important;
+  height: 18px !important;
+}
+.profilePage .infoContent .cardItem:hover{
+  background-color: var(--grayMainColor);
+}
+/* ?Activity */
+.profilePage .activitiesCard figure{
+width: 65px;
+height: 65px;
+}
